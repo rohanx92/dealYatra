@@ -81,6 +81,8 @@ header('Location: index.php');
 			<!-- Ul .nav contains the menu list such as home, features, ect. -->
 			<ul class="nav navbar-nav navbar-right">
 				<li class="nav-logout"><a style="padding:0px;" href="logout.php">Logout</a></li>
+				<li class="nav-logout"><a style="padding:0px;" href="change_password.php">Change Password</a></li>
+
 			</ul>
             <!-- end of ul .nav -->
 				
@@ -94,7 +96,8 @@ header('Location: index.php');
       
       
 	  <!-- BEGIN DIV #MAIN-CONTENT-->
-	  <div id="main-content" class="fade out">
+	  <div id="main-con
+	  ent" class="fade out">
   	  
           <!-- BEGIN DIV #HOME -->
           <div id="home">

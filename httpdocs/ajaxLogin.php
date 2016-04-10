@@ -7,7 +7,7 @@ if(isSet($_POST['username']) && isSet($_POST['password']))
 $username=mysqli_real_escape_string($db,$_POST['username']); 
 $password=md5(mysqli_real_escape_string($db,$_POST['password'])); 
 
-$result=mysqli_query($db,"SELECT uid FROM users WHERE email='$username' and password='$password' AND active='1'");
+$result=mysqli_query($db,"SELECT * FROM users WHERE email='$username' and password='$password' AND active='1'");
 $count=mysqli_num_rows($result);
 
 $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
